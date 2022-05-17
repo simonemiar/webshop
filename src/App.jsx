@@ -2,7 +2,6 @@ import { Link, Routes, Route, } from "react-router-dom";
 import Home from "../src/routes/Home";
 import Products from "../src/routes/Products";
 import SingleProduct from "../src/routes/SingleProduct";
-import BasketContainer from "./components/BasketContainer";
 import {BasketProvider} from "../src/contexts/basketContext";
 
 export default function App(){
@@ -14,7 +13,6 @@ export default function App(){
       </nav>
     </header>
     <BasketProvider>
-    <BasketContainer/>
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/products" element={<Products />} />

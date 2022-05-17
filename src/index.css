@@ -5,6 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  max-width: 1200px;
+  background-color: rgba(241, 241, 241, 0.664);
 }
 
 code {
@@ -20,8 +22,32 @@ img {
   max-width: 100%;
 }
 
+.basket_container{
+  padding: 10px;
+}
+
 .ProductList{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
+  padding: 10px;
+}
+
+nav {
+  height: 50px;
+}
+
+.flex_product{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 18px;
+}
+
+article{
+  border: grey 1px solid;
+}
+
+button{
+  height: 100%;
 }

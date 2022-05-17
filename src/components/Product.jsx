@@ -27,9 +27,11 @@ export default function Product(props){
     return(
     <article>
         <img src={`https://kea-alt-del.dk/t7/images/webp/640/${props.product.id}.webp`} alt="" />
-        <h2>{props.product.productdisplayname}</h2>
-        <p>{props.product.price}</p>
-        <button onClick={buy}>Buy</button>
-        <Link to={`/products/${props.product.id}`}>Read More</Link>
+        <h3>{props.product.productdisplayname}</h3>
+        <div className="flex_product">
+            <p>${props.product.price}</p>
+            <button onClick={buy}>add to basket</button>
+        </div>
+        {/* <Link to={`/products/${props.product.id}`}>Read More</Link> */}
     </article>); 
 }

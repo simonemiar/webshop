@@ -2,6 +2,8 @@ import {useState, useEffect} from "react"
 import Nav from "../components/Nav";
 import ProductList from "../components/ProductList";
 import styles from "../App.module.css";
+import BasketContainer from "../components/BasketContainer";
+
 
 function Products() {
   const [products, setProducts] = useState([]);
@@ -16,7 +18,10 @@ function Products() {
   }, [])
   return (
     <div className={styles.App}>
+      <>
       <ProductList products={products}/>
+      <BasketContainer/>
+      </>
     </div>
   );
 }
